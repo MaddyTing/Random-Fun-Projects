@@ -1,0 +1,36 @@
+a = int(input("Enter a number: "))
+b = int(input("Enter a number: "))
+
+print("\nBoop means that the numbers are equal to each other. Non-Boop means that the numbers are not equal to each other. \n")
+
+print("If the numbers are not equal, Even means that the first number entered is even. Odd means that the first number entered is odd. \nWhen the numbers are equal, it's both numbers instead of just the first. \n")
+
+print("If the numbers are not equal, Positive means that the first number printed is positive. Negative means that the first number printed is negative. \nWhen the numbers are equal, it's both numbers instead of just the first.\n")
+
+print("Zero means that either of the numbers entered were equal to 0.\n")
+
+if (a == 0 or b == 0):
+    if (a == b):
+        print("Zero Boop")
+    if (a != b):
+        print("Zero Non-Boop")
+elif (a == b and a % 2 == 0):
+    if (a > 0):
+        print("Even Boop Positive")
+    else:
+        print("Even Boop Negative")
+elif (a != b and a % 2 == 0): 
+    if (a > 0 and b > 0):
+        print("Even Non-Boop Positive")
+    else:
+        print("Even Non-Boop Negative")
+elif (a == b and a % 2 == 1):
+    if (a > 0):
+        print("Odd Boop Positive")
+    elif (a < 0):
+        print("Odd Boop Negative")
+elif (a != b and a % 2 == 1):
+    if (a > 0 and b > 0):
+        print("Odd Non-Boop Positive")
+    elif (a < 0 or b < 0):
+        print("Odd Non-Boop Negative")
